@@ -1,0 +1,101 @@
+📅 Azure ISM/PSPF Compliance Roadmap (90-Day Plan)
+Phase 1: Foundation (Days 1–30)
+
+Goal: Establish baseline identity, access, and governance controls.
+Key Activities:
+
+Identity & Access
+
+Enforce MFA for all accounts (users + admins) via Conditional Access.
+
+Enable Privileged Identity Management (PIM) for admins.
+
+Configure RBAC at subscription/resource group level.
+
+Governance
+
+Deploy Azure Policy: Allowed Locations (Australia East/Southeast).
+
+Assign baseline compliance initiatives (e.g., ISM/PSPF, CIS).
+
+Build risk register for high-priority gaps.
+
+Personnel
+
+Formalize offboarding workflow (HR → AD disable → Intune wipe).
+
+Roll out security awareness training for privileged users.
+
+Deliverables: MFA report, RBAC/PIM assignment export, initial compliance dashboard.
+
+Phase 2: Security Controls (Days 31–60)
+
+Goal: Secure data, networks, and enable monitoring.
+Key Activities:
+
+Data Security
+
+Enable encryption at rest for all storage accounts with customer-managed keys.
+
+Configure TLS (HTTPS only) for App Services, Storage, and APIs.
+
+Deploy DLP & sensitivity labels for classified data.
+
+Network
+
+Deploy NSGs and Azure Firewall/WAF for segmentation.
+
+Configure Private Link/Service Endpoints for critical services.
+
+Enforce VPN/Bastion for remote admin access.
+
+Monitoring
+
+Centralize logs in Log Analytics workspace.
+
+Connect Defender for Cloud for all subscriptions.
+
+Enable Azure Sentinel (Microsoft Sentinel) with core alert rules.
+
+Deliverables: Firewall/NSG configs, Sentinel setup doc, DLP policy export.
+
+Phase 3: Assurance & Continuous Improvement (Days 61–90)
+
+Goal: Validate controls, automate evidence, and prepare for audit.
+Key Activities:
+
+Monitoring & Audit
+
+Implement Access Reviews (quarterly, via Azure AD).
+
+Automate policy compliance exports into evidence repository.
+
+Run threat detection tabletop using Sentinel + IR playbooks.
+
+Governance
+
+Establish Change Management CAB process with documented approvals.
+
+Define security posture score KPI (Defender for Cloud).
+
+Personnel & Physical
+
+Document HR vetting linkage to privileged access.
+
+Collect Microsoft Service Trust Portal evidence (SOC, ISO, IRAP).
+
+Continuous Improvement
+
+Review roadmap success with stakeholders.
+
+Build annual ISM/PSPF compliance calendar.
+
+Deliverables: Evidence workbook updated with real data, IR playbook test results, audit-ready compliance pack.
+
+🎯 Milestones
+
+Day 30: MFA enforced, baseline policy assigned, offboarding workflow active.
+
+Day 60: Data encryption, segmentation, Sentinel monitoring in place.
+
+Day 90: Evidence automation running, incident response tested, audit-ready package delivered.
